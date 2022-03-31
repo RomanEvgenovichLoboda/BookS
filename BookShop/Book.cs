@@ -22,7 +22,6 @@ namespace Library
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             synth = new SpeechSynthesizer();
-            //textBox1.Text = File.ReadAllText(@"global::Library\Properties\Resources\book2.txt");
             synth.SetOutputToDefaultAudioDevice();
             synth.SpeakCompleted += Synth_SpeakCompleted;
         }
@@ -36,7 +35,6 @@ namespace Library
             synth.SetOutputToDefaultAudioDevice();
             synth.SpeakCompleted += Synth_SpeakCompleted;
             if (b) { textBox1.Text = File.ReadAllText(str); }
-            //else { textBox1.Text = File.ReadAllText(FullPath(str)); }
             else
             {
                 int count = 0;
@@ -55,13 +53,6 @@ namespace Library
                 }
                 textBox1.Text = lns[iter];
                 textBox2.Text = lns[iter++];
-
-                //lns = File.ReadAllLines(FullPath(str));
-                //for (int i = 0; i < 20; i++)
-                //{
-                //    textBox1.Text += lns[i];
-                //    pages++;
-                //}
             }
         }
         private static string FullPath(string str)
@@ -76,7 +67,6 @@ namespace Library
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //textBox1.Text = File.ReadAllText(@"global::Library.Properties.Resources.1111111");
             if (!textBox1.Text.Equals(String.Empty)) { synth.SpeakAsync(textBox1.Text); }
             if (!textBox2.Text.Equals(String.Empty)) { synth.SpeakAsync(textBox2.Text); }
         }
@@ -86,7 +76,6 @@ namespace Library
             if (iter < lns.Count - 2) { textBox1.Text = lns[iter++]; }
             if(iter < lns.Count - 1) {textBox2.Text = lns[iter++]; }
             else { MessageBox.Show("End"); }
-           
         }
 
         private void button2_Click(object sender, EventArgs e)

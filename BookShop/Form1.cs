@@ -38,7 +38,7 @@ namespace Library
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox11.Image = picts[rand.Next(0,5)];
+            pictureBox11.Image = picts[new Random().Next(5)];
             using(OpenFileDialog ofd = new OpenFileDialog()) 
             {
                 ofd.Filter = "TEXT|*.txt|ALL|*.*";

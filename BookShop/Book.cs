@@ -87,7 +87,6 @@ namespace Library
             if(iter < lns.Count - 1) {textBox2.Text = lns[iter++]; }
             else { MessageBox.Show("End"); }
            
-            
         }
 
         private void button2_Click(object sender, EventArgs e)

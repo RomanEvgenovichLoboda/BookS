@@ -20,6 +20,7 @@ namespace Library
         public Polka()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             radioButton1.Checked = true;
             pictureBox11.Visible = false;
             picts = new List<Image>() { global::BookShop.Properties.Resources.к1,

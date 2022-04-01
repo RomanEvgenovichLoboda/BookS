@@ -1,0 +1,180 @@
+Update Checklist
+After you decide to update, you must develop an action
+plan. The following update checklist (valid for upgrading from
+Windows 7 or Windows 8) will help you plan and implement
+a successful upgrade strategy:
+■■ Make sure that your computer meets the minimum hardware
+requirements for Windows 10.
+■■ Make sure that your equipment is in the HCL.
+■■ Make sure that you have Windows 10 drivers for the hardware.
+You can check it with the help of the equipment manufacturer.
+■■ To check the current configuration and status of your
+computer, launch the Get Windows 10 App from the Microsoft
+Web site, which also contains documentation for
+using this utility. It will generate a report of any known
+problems with software or software compatibility based
+on your configuration. Before upgrading to Windows 10,
+you must resolve any problems that arise.
+■■ Make sure your BIOS is up-to-date. Windows 10 requires
+that you have the latest BIOS on your computer. If this
+does not happen, it may not be able to use advanced power
+management functions or device configuration functions.
+In addition, your computer may stop functioning in
+the process, or after an update. Be careful when updating
+the BIOS, because installing the wrong BIOS version may
+result in the computer being inoperable.
+■■ Make an inventory of your current configuration. It should
+contain information about the current network configuration,
+installed applications, hardware elements and their
+configuration, running servicesб and any profile and policy
+settings.
+■■ Backup data and configuration files. Before making any
+significant changes to the configuration of your computer,
+you must back up your data files and configuration, and
+then verify that you can successfully restore the backup.
+Most likely, if you have a valid backup, you will not have
+any problems. Similarly, if you do not have a valid backup,
+problems are bound to occur!
+■■ Delete all unnecessary files or applications and clean up
+any program groups or program items that you do not
+use. Try to remove all unwanted files on your computer
+before upgrading.
+■■ Before upgrading, make sure that there are no existing
+problems on your hard drive. Perform disk surface check,
+current virus scan, and defragmentation. This step will
+prepare your hard disk for updating.
+■■ Perform the update. At this point, you are upgraded from
+Windows 7 or Windows 8 to Windows 10.
+■■ Check the configuration. After installing Windows 10, use
+the previously made inventory list to compare and verify
+each item that was before the update to make sure that
+the update was successful.
+Partition Preparation
+Partition preparation is the initialization of a physical hard
+disk and the creation of logical partitions. Logical disks are
+the way to allocate space for the primary and logical partitions
+of a disk. For example, if you have a 500GB hard drive,
+you can break it into three logical drives:
+■■ C: A disk that can be 200GB
+■■ D: A disk that can be 150GB
+■■ E: A disk that can be 150GB.
+The following sections describe some of the key considerations
+for partitioning a disk:
+Partition size. One of the important considerations in
+your partitioning scheme is determining the partition size.
+You need to consider the amount of space occupied by your
+operating system, the applications that will be installed, and
+the amount of data stored. It is also important to consider
+the amount of space required in the future.
+Microsoft recommends allocating at least 20GB of disk space
+for 64-bit versions and at least 16GB for 32-bit Windows 10.
+This will allow the operating system files to be used for future
+growth in terms of updates and installation files that are
+located in the files of the operating system.
+Note: In practice, the system «grows» as you update
+and install programs and a limit of 20GB may not be
+enough after a while. For office work, at least 50GB is
+recommended. In other cases, you need to add to this
+size the size of additional software and data that must
+necessarily be located on the C: drive.
+Windows 10 Partitions
+Since the advent of Windows Vista, the system uses hidden
+partitions for its work. To understand why we need this, let’s
+consider what was before. Windows XP could be completely
+located on one partition or, at the user’s desire, have a separate
+system partition and a boot partition. The system partition
+(also active) contained boot files, that is, the files needed
+to boot the system. The boot partition contained the Windows
+system itself. (This is the original terminology of Microsoft).
+Often there have been cases that users, being inexperience or
+when installing/removing an additional system, have deleted
+the system boot files. To avoid these problems, starting with
+Windows Vista/Windows 7, the installer created a hidden 100MB
+system partition where the download files were located
+each item that was before the update to make sure that
+the update was successful.
+Partition Preparation
+Partition preparation is the initialization of a physical hard
+disk and the creation of logical partitions. Logical disks are
+the way to allocate space for the primary and logical partitions
+of a disk. For example, if you have a 500GB hard drive,
+you can break it into three logical drives:
+■■ C: A disk that can be 200GB
+■■ D: A disk that can be 150GB
+■■ E: A disk that can be 150GB.
+The following sections describe some of the key considerations
+for partitioning a disk:
+Partition size. One of the important considerations in
+your partitioning scheme is determining the partition size.
+You need to consider the amount of space occupied by your
+operating system, the applications that will be installed, and
+the amount of data stored. It is also important to consider
+the amount of space required in the future.
+Microsoft recommends allocating at least 20GB of disk space
+for 64-bit versions and at least 16GB for 32-bit Windows 10.
+This will allow the operating system files to be used for future
+growth in terms of updates and installation files that are
+located in the files of the operating system.
+Note: In practice, the system «grows» as you update
+and install programs and a limit of 20GB may not be
+enough after a while. For office work, at least 50GB is
+recommended. In other cases, you need to add to this
+In Windows 8, this partition received an additional function
+— a recovery partition. In this section, the recovery environment
+files were added, they are located in the hidden
+system folder called Recovery. In fact, this is a special mini
+operating system with a set of programs for recovery in case
+of failures. (It is discussed in more detail in the following lessons.)
+Therefore, the section «grew» to 350MB. In Windows 10,
+the first release of the recovery environment was added and
+expanded, so the size of the hidden partition grew to 500MB.
+In some cases, when cloning or partitioning of third-party
+discs was used, the Hidden partition may be absent, and all
+files that are on it should be located on the Boot disk.
+The partitioning of disks and the creation of hidden
+Windows 10 partitions also depends on the partitioning of
+the disks (MBR or GPT) and the BIOS version. In some implementations,
+the system can automatically create two separate
+hidden sections — System with boot files and recovery
+partition
+An MSR partition can also be created that is used in UEFI
+and GPT systems to support software components that previously
+used hidden sectors.
+Some laptop manufacturers can add an additional partition
+with its own system recovery program. Typically, there
+is a complete copy of Windows installed on the laptop and
+after a while, it becomes not relevant.
+In more detail, different versions of partition and recommendations
+will be considered in the lesson Working with disks.
+Disk Partition Configuration Utilities
+If you decide to prepare the disk before installation, you
+can use several third-party tools such as Acronis Disk Director
+or Partition Manager, but I recommend using these utilities
+only in extreme cases if the standard windows utilities do not
+suit you. For example, you need to move partitions before
+the installation or you work with Linux partitions. In most
+cases, the preparation of disks can be performed by means of
+Windows installation (see later in this lesson).
+You can also get full control of the disk partitioning during
+the installation of the Windows 10 operating system. To do
+this, at the «select partition» installation, press Shift+F10 and
+type diskpart in the console window that opens (For experienced
+users only).
+We recommend that you create only the first partition
+where Windows 10 will be installed (the installer will hide
+the sections itself). Then, after the installation, you can use
+the Disk Management utility in Windows 10 to create any
+other partitions that you need.
+Languages and Localization
+Language and localization settings determine the language
+that the computer will use. Windows 10 supports many languages
+for the interface and utilities of the operating system.
+Localization settings are used to configure the format for
+items such as numbers, currencies, time, and dates. For example,
+English for the United States indicates a short date as
+mm/dd/yyyy (month/day/year), while English for South Africa
+indicates a short date as yyyy/mm/dd (year/month/day).
+It is very important to choose only those localizations that
+you need to use on this computer. The reason for this is that
+your system will receive updates for all selected regions that
+you have configured.

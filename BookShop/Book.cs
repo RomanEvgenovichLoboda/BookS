@@ -14,7 +14,7 @@ namespace Library
     public partial class Book : Form
     {
         static SpeechSynthesizer synth;
-        public int pages = 0;
+      //  public int pages = 0;
         public int iter = 0;
         public List<string> lns = new List<string>();
         public Book()
@@ -47,12 +47,14 @@ namespace Library
                     {
                         lns.Add(temp);
                         count = 0;
-                        pages++;
+                       // pages++;
                         temp = "";
                     }
                 }
-                textBox1.Text = lns[iter];
-                textBox2.Text = lns[iter++];
+                textBox1.Text = lns[iter].ToString();
+                label1.Text = Convert.ToString(iter);
+                textBox2.Text = lns[iter++].ToString();
+                label2.Text = Convert.ToString(iter);
             }
         }
         private static string FullPath(string str)
@@ -73,15 +75,23 @@ namespace Library
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (iter < lns.Count - 2) { textBox1.Text = lns[iter++]; }
-            if(iter < lns.Count - 1) {textBox2.Text = lns[iter++]; }
+            if (iter < lns.Count - 1) {
+                textBox1.Text = lns[iter++];
+                label1.Text = Convert.ToString(iter);
+            }
+            if(iter < lns.Count - 1) {
+                textBox2.Text = lns[iter++];
+                label2.Text = Convert.ToString(iter);
+            }
             else { MessageBox.Show("End"); }
         }
 
         private void button2_Click(object sender, EventArgs e)
         { 
-            if (iter > 1)  { textBox2.Text = lns[iter--]; }
-            if (iter > 0) {textBox1.Text = lns[iter--]; }
+            if (iter > 0)  { textBox2.Text = lns[iter--];
+                label2.Text = Convert.ToString(iter);}
+            if (iter > 0) {textBox1.Text = lns[iter--]; 
+                label1.Text = Convert.ToString(iter); }
             else { MessageBox.Show("End"); }
         }
     }

@@ -138,7 +138,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\book1.txt" />
+    <Content Include="Resources\book10.txt" />
     <Content Include="Resources\book2.txt" />
+    <Content Include="Resources\book3.txt" />
+    <Content Include="Resources\book4.txt" />
+    <Content Include="Resources\book5.txt" />
+    <Content Include="Resources\book6.txt" />
+    <Content Include="Resources\book7.txt" />
+    <Content Include="Resources\book8.txt" />
+    <Content Include="Resources\book9.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

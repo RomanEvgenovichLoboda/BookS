@@ -73,6 +73,7 @@ namespace Library
 
         private void button3_Click(object sender, EventArgs e)
         {
+           // if(Control.MouseButtons == MouseButtons.Left)
             if (page < lns.Count - 1) {
                 textBox1.Text = lns[page++];
                 label1.Text = Convert.ToString(page + 1);

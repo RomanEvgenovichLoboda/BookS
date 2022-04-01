@@ -1,0 +1,223 @@
+1. Equipment Configuration
+Proper configuration of the equipment is one of the most
+important tasks when configuring Windows 10. It includes
+some tools that help users and administrators correctly configure
+their equipment.
+In Windows 10, there are built-in functions called Device
+Stage. Device Stage offers an advanced graphical interface
+that provides more detailed information about installed devices
+and adds functionality. Device Manager in Windows
+10 works the same as in Windows 7 and Windows 8/8.1. It
+is designed to display information about the equipment installed
+on your computer, and as an interface for adding and
+configuring new hardware.
+Hardware today complies with the Plug and Play standard,
+so in most cases, simply connecting the equipment will allow
+the device manager to automatically configure it. Devices that
+are not Plug and Play compatible can be manually installed
+from Device Manager.
+Device Stage
+One of the main features provided by a personal computer
+is the use of a large set of all kinds of devices for it. Device
+Manager allows us to see all the connected equipment and
+make changes to the configuration, but using the functions
+of the devices themselves was left for programs outside the
+Windows interface. Windows 10 includes a specification for
+hardware vendors (given that most hardware comes with
+its own software to provide a user interface), which allows
+them to give the user the ability to manage devices through
+standard Windows tools. This function and specification are
+known as Device Stage.
+Windows Devices and Printers is an interface for displaying
+and accessing equipment that supports Device Stage.
+Take, for example, a digital camera. Typically, when you
+connect the camera to a PC, it recognizes the device (thanks
+to Plug and Play support) and usually displays it as a mass
+storage device. Users, who need additional features, such as
+uploading and editing photos, should use another program.
+On the other hand, when you connect a device that supports
+Device Stage technology, it displays a single window that
+gives you easy access to common device tasks. In the case of
+a camera, it is, for example, importing images, editing and
+viewing images, all this using a single interface.
+In Windows 10, you will be able to access all connected
+wireless devices from the Devices and Printers screen, and
+some devices will be displayed in the extended Windows 10
+Taskbar. Here you can work with your devices, view the files
+that they may contain, and manage the device settings.
+Other wireless devices (for example, Bluetooth) are also
+supported by Device Stage, which greatly simplifies their
+management. Because peripherals are periodically disconnected
+and reconnected, the Devices and Printers screen will
+be updated in real time.
+Using Device Manager
+Device Manager is a component in Windows 10 that
+you will use to find out which devices are connected to your
+computer. You can use the Device Manager to ensure that all
+devices function properly and to troubleshoot devices. For
+each installed device, you can view specific properties up to
+the resources used, such as the assigned I/O port and IRQ
+(interrupt requests).
+Through Device Manager, you can do the following:
+■■ View a list of all hardware installed on your computer;
+■■ Determine which device driver is installed for each device;
+■■ Manage and update device drivers;
+■■ Install new devices;
+■■ Use the driver rollback to return to the previous driver
+version;
+■■ Troubleshoot the device.
+Moreover, you can find out which Windows 10 devices
+are recognized. That is, if you install or connect a new device,
+and Windows 10 does not recognize it at all, this component
+will not be displayed in Device Manager (which is very unlikely
+given the support of Plug and Play standards by modern
+vendors). However, Device Manager is an important tool that
+allows you to see which devices are initialized by Windows 10.
+
+The Device Manager has a fairly simple Start Screen, but
+it has a lot of functionality. On the main screen, you see a list
+of equipment that is installed and recognized. If the device is
+recognized, but the driver is not installed or installed incorrectly,
+it will not work, or it will work incorrectly. You will see a
+warning symbol (a yellow triangle with an exclamation point)
+displayed on the device with the existing problems. Suppose
+you just installed a new network adapter, but the device does
+not seem to work. You can open Device Manager and open
+the Network Adapter option to begin the troubleshooting
+process. To do this, you must right-click the wrong adapter
+and select Properties to see its Properties dialog box.
+There are many reasons for viewing installed and configured
+devices on the computer. One of the reasons is to check the type
+and condition of the hardware. For example, if someone from
+your organization has provided you with documentation for
+a particular computer that contains hardware specifications,
+and you want to make sure that the components declared in
+the specification are actually available, then you can use Device
+Manager on this computer to make sure they are.
+Device Properties Available in Device Manager
+After opening the Device Manager and accessing the
+installed devices on your computer, you can select the Properties
+item in the context menu and review the contents of the tabs.
+Here you can view and change the configuration settings, if
+necessary. You will see that the tabs available in the Properties
+dialogs will differ among devices, because the available options
+may vary for different hardware components. Most devices
+will have at least the General tab, the Driver tab, and the
+Details tab.
+The Properties dialog box for most devices will contain
+more specific tabs for hardware configuration. For the network
+adapter, this will be the Advanced tab for viewing and
+changing more specific configuration parameters. Below is
+the Advanced tab of the network adapter and the Value dropdown
+list to show the possible options (see Figure 4).
+Installation and Update of Device Drivers
+Device drivers are control code that actually interacts
+with the hardware components of the computer system.
+Commands are specific to each piece of hardware, and
+different instructions, memory addresses, or actions can
+be used, even within the same hardware type. A network
+interface card (NIC) from one manufacturer can actually
+have a different set of instructions than a network adapter
+from another manufacturer.
+The driver accepts the standard instruction from the
+operating system, interprets it, and then issues a hardware
+instruction to perform the required function.
+The operating system or software works best when it can
+use standard commands and have the same functionality
+across the entire equipment, regardless of the manufacturer.
+Drivers need to be updated. For example, a set of commands
+for a driver can perform some function incorrectly.
+This leads to errors in the operation of the device and must
+be corrected. The hardware manufacturer usually updates the
+driver to fix the problem. You may also need new or improved
+functionality, so the hardware manufacturer will need to
+change the driver code to add functionality or provide better
+performance. And this, in turn, will again lead to update.
+There are various ways to download and install drivers.
+Microsoft drivers can be downloaded using the Windows
+Update utility. Drivers from different manufacturers can be
+downloaded from the manufacturer's website. To do this, you
+need to go to their site, find the product, and download the
+latest drivers. Then you can install these drivers using the
+built-in installation wizard or the device manager.
+A typical initial installation of drivers occurs automatically
+today due to the Plug and Play specification. After connecting
+the hardware, Windows 10 recognizes it and launches the
+driver installation program.
+Let's consider connection of a digital camera to the USB
+port of your computer.
+Windows 10 recognizes that the device is connected and
+will collect information about the USB device. Then Windows
+will install the best driver that it knows about (and if it does
+not know about the device, it will ask you what to do).
+You can check general information about the driver, for
+example, the vendor or the version. You can see this information
+on the Driver tab of the Properties dialog box. You can
+also view information about driver files and their location.
+Note that this is not a driver store (it is a protected area).
+The running driver files usually have the SYS extension and
+act as part of the OS. The driver installation files have the INF
+extension. Information about the driver contains information
+about the vendor, the version of the file, the digital signature,
+and copyright.
+Sometimes, when you have problems with a hardware device,
+you search the Internet for various technical information
+or use search queries to try to find solutions to the problem
+offered by other administrators. Someone may mention that
+can even mention the exact version of the driver and offer a
+fix. Having the ability to view information about drivers is
+useful in this situation.
+The Driver tab for a number of installed hardware in
+Device Manager also provides the functionality for disabling
+and uninstalling the driver. Why do you need to disable the
+driver? There are several reasons, but troubleshooting is one
+of the most common.
+Disabling the driver effectively disables the hardware; it will
+no longer function in the system. Similarly, the device driver is
+deleted, but if the hardware is still installed, you can uninstall
+the driver and run a check to make sure that the hardware is
+still recognized, and force Windows to reinstall the driver to
+try to find out whether this is the driver or device problem.
+Sometimes it may be useful to uninstall and reinstall the
+device driver. Every time you do this, the device configuration
+parameters will be reset to their original values.
+If the device driver worked earlier and stopped working
+for some unknown reason (if you knew the reason, you just
+fixed it), you should try to uninstall and reinstall it. You can
+also use a different device driver, instead of the standard one
+by Windows 10 configured for use through Plug and Play.
+Note that uninstalling the device driver does not uninstall the
+driver files from the device; When you uninstall the device
+driver, the operating system configuration for the hardware
+is deleted.
+In some cases, you will need to find the driver files and
+delete them manually. Remember that you can find the names
+and location of the files from the Driver Information on the
+Driver tab of the Properties dialog box of the specific hardware
+in Device Manager.
+Some hardware manufacturers want you to install driver
+files and some software for the device before the operating
+system can detect this device. This is due to the fact that the
+program that manages some of the hardware functionality must
+be installed first so that its configuration file can accurately
+refer to the installed drivers. Also, this program should be
+able to add driver files to the operating system drivers location
+directories before the operating system detects the device.
+The process of adding drivers is usually performed by
+running the installation program from the provided CD-ROM
+or from the installation packages pre-downloaded from the
+manufacturer's website.
+When a device is added to the system, it is detected. The
+Plug and Play service identifies the device and looks for the
+correct driver in the storage. If it is found, the device is considered
+authorized, and the driver files are used by the Plug
+and Play service to copy them from driver stores to the system
+location, usually to the C:\Windows\System32\Drivers folder.
+Next, using the Plug and Play service, the registry is configured
+and the installed driver is run.
+There are also situations in which we are faced with the
+need for manual installation of equipment. There may be
+several reasons for this, including the installation of obsolete
+equipment, as well as situations where drivers are not supplied
+in the operating system distributions or the drivers themselves
+require manual installation (see Figure 6).

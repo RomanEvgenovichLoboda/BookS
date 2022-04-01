@@ -1,0 +1,127 @@
+Starting PC and Booting OS
+For almost all modern computers, the boot process is mostly
+automated, but this does not mean that it does not deserve
+to be introduced.
+Let’s consider the basic stages of operating system loading:
+Turning on the computer, POST, BootMonitor
+The initial stage of loading the operating system after turning
+on the computer starts in the BIOS (Basic Input/Output
+System). In the BIOS settings, we specify the sequence of
+browsing the possible boot devices in the order of their priority.
+There are various options for downloading and their
+combinations: from hard disk, CD/DVD-ROM, USB-flash,
+over the network, etc.
+Immediately after passing the POST (Power-On Self-Test),
+the computer’s BIOS will start to cycle through the specified
+boot devices until one of them finds a suitable special record
+that contains information about further actions.
+Loader of the 1st Level. Master Boot Record
+Master Boot Record is the record located in the first physical
+sectors of bootable storage devices. It contains a Partition
+Table and executable code.
+The main task of the program written in the MBR is to
+search for the active system partition of the disk and transfer
+control to its boot sector. Thus, this stage can be called a preparatory
+stage, because the OS itself does not directly load itself.
+A system partition is referred to as a disk partition (storage
+device) on which operating system files are located, which are
+responsible for the OS boot process (the operating system itself
+can be located in another section). In principle, there can be
+several system partitions, so one of them is marked as active.
+It is it that is looked for by the program loaded with the MBR.
+Loader of the 2nd Level. Partition Boot Sector
+The next step in the computer boot is to transfer control
+to the executable code written in the PBS (Partition Boot
+Sector). PBS is located in the first sector (sectors) of the corresponding
+disk partition. In the PBS code, the file name of
+the operating system loader is registered, and the control is
+transferred to this stage.
+The initial stage of loading the operating system.
+OS boot manager
+If we are talking about older versions of Windows up to
+Vista, for example, Windows XP, then Ntldr will be loaded. It,
+in turn, reads information from the text file Boot.ini, which
+contains information about the installed operating systems.
+Starting with Windows Vista and up to Windows 10, the boot
+manager is called Bootmgr. It reads the list of installed operating
+systems not from the boot.ini file, but from the system
+BCD (Boot Configuration Data) storage.
+This dispatcher is on the hidden System section, which
+we mentioned earlier.
+Booting the operating system kernel
+The final stage of loading the operating system is to load
+the OS kernel and transfer control to it.
+Multiboot Support
+You might want to install Windows 10, but leave the other
+previously installed operating systems. Double loading or
+multi-boot allows the computer to boot multiple operating
+systems. Your computer will be automatically configured for
+multicasting if:
+■■ on your computer, there was installed operating system
+with dual boot before installing Windows 10,
+■■ you are not updated from this operating system,
+■■ You installed Windows 10 in a different partition.
+One of the reasons for using multiboot is testing various
+systems. For example, you can configure one computer to
+multiboot with Windows 7, Windows 8.1, and Windows 10.
+■■ Here are some recommendations for configuring multiboot:
+■■ Make sure that you have enough free disk space.
+■■ Windows 10 should be installed on a separate partition
+for multi-boot with other operating systems.
+■■ It is recommended to install older operating systems before
+installing newer operating systems. If you want to provide
+multi-boot with Windows 7 and Windows 10, you first
+need to install Windows 7. If you first install Windows 10,
+you cannot install Windows 7 without having damaged
+the configuration of Windows 10.
+■■ Do not install Windows 10 on a compressed volume.
+■■ After you have installed several operating systems, select
+the system that will be loaded by default.
+■ The bcdedit console utility
+The bcdedit utility provides much more options for editing
+multiboot parameters. You can work with this utility only
+if you run the command prompt as administrator. To open
+a command prompt, you can do one of the following:
+■■ Go to the \Windows\system32 directory, find cmd.exe in
+it, open the context menu and select the Run as administrator
+item.
+■■ Type cmd.exe in the Search for programs and files box,
+open the shortcut menu and select the Run as administrator
+item
+When the command prompt opens, type bcdedit to start
+the bcdedit utility. You can also enter bcdedit /? to view all
+the bcdedit commands 
+system without activation. At the end of the grace period,
+you cannot create new files or save changes to existing files
+until Windows 10 is activated. When the grace period ends,
+the Windows Activation Wizard automatically starts. It will
+prompt you to go through the activation process. You may
+need to click the Change product key button and enter the license
+number that comes with a copy of Windows 10 (fig. 47).
+Windows Update
+Windows Update is a utility that connects to the Microsoft
+Web site or to a local update server called the Windows Server
+Update Services (WSUS) server to ensure that the Windows 10
+operating system (along with other Microsoft products) has
+the most current versions of the files or Microsoft operating
+system software.
+Below are some common update categories related to
+Windows Update.
+■■ Security updates
+■■ Critical updates
+■■ Service packages
+■■ Drivers
+■■ Product/software updates
+■■ Windows Store.
+Upgrade Process
+Microsoft usually releases updates to its products on
+Tuesdays :). But before this update is available to end users,
+it will be tested in Microsoft.
+The Windows development team adds new features and
+capabilities to Windows using production cycles. The cycle
+consists of three stages: development, testing, and release.
+After the new features for Windows 10 are developed,
+Microsoft employees test these updates on their own computers.
+This is called «self-testing».
+After the updates are tested in Microsoft, they will then
+be published for download by end users

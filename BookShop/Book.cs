@@ -14,30 +14,45 @@ namespace Library
     public partial class Book : Form
     {
         static SpeechSynthesizer synth;
-        //string fPath;
+        public int page = 0;
+        public List<string> lns = new List<string>();
         public Book()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             synth = new SpeechSynthesizer();
-            //textBox1.Text = File.ReadAllText(@"global::Library\Properties\Resources\book2.txt");
             synth.SetOutputToDefaultAudioDevice();
             synth.SpeakCompleted += Synth_SpeakCompleted;
         }
         public Book(string str, bool b = false)
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.textBox1.ReadOnly = true;
+            
             synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
             synth.SpeakCompleted += Synth_SpeakCompleted;
             if (b) { textBox1.Text = File.ReadAllText(str); }
-            //else { textBox1.Text = File.ReadAllText(FullPath(str)); }
             else
-            { 
-                string[] lns = File.ReadAllLines(FullPath(str));
-                for(int i = 0; i < 10 ; i++)
+            {
+                int count = 0;
+                string temp = "";
+                foreach (string item in File.ReadLines(FullPath(str)))
                 {
-                    textBox1.Text += lns[i];
+                    count++;
+                    temp += item;
+                    if (count == 20)
+                    {
+                        lns.Add(temp);
+                        count = 0;
+                        temp = "";
+                    }
                 }
+                textBox1.Text = lns[page].ToString();
+                label1.Text = Convert.ToString(page + 1);
+                textBox2.Text = lns[page++].ToString();
+                label2.Text = Convert.ToString(page + 1);
             }
         }
         private static string FullPath(string str)
@@ -52,9 +67,31 @@ namespace Library
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //textBox1.Text = File.ReadAllText(@"global::Library.Properties.Resources.1111111");
             if (!textBox1.Text.Equals(String.Empty)) { synth.SpeakAsync(textBox1.Text); }
             if (!textBox2.Text.Equals(String.Empty)) { synth.SpeakAsync(textBox2.Text); }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           // if(Control.MouseButtons == MouseButtons.Left)
+            if (page < lns.Count - 1) {
+                textBox1.Text = lns[page++];
+                label1.Text = Convert.ToString(page + 1);
+            }
+            if(page < lns.Count - 1) {
+                textBox2.Text = lns[page++];
+                label2.Text = Convert.ToString(page + 1);
+            }
+            else { MessageBox.Show("End"); }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        { 
+            if (page > 0)  { textBox2.Text = lns[page--];
+                label2.Text = Convert.ToString(page + 1);}
+            if (page > 0) {textBox1.Text = lns[page--]; 
+                label1.Text = Convert.ToString(page + 1); }
+            else { MessageBox.Show("End"); }
         }
     }
 }

@@ -1,0 +1,205 @@
+In the most general case, the installation process looks
+quite simple, because the installation wizard tells you what to
+do and your task is to agree with it filling in at the appropriate
+fields some minimum of personal parameters.
+It is much more difficult to prepare for installation and
+plan the installation. In this regard, there is a saying: «Every
+hour spent preparing will save the day necessary for the work
+itself!» In addition, it is necessary to provide for the possibility
+of returning to the initial state that was before the installation
+in case there are any insoluble problems.
+The very first solution that you will have to take before
+starting the installation is which of the seven versions you
+will install.
+Windows 10 Home is the solution for home use. All safety
+functions are kept to a minimum necessary for home use.
+It is impossible to fully use the system of corporate networks.
+But the cost of a license is about 3 times less
+Windows 10 Professional is a solution for small and medium
+businesses. Added options for increased protection of
+information. Supports network and corporate security. In
+most cases, this version is enough to work in organizations
+Windows 10 Enterprise is designed for medium and large
+organizations. Has a full set of options for work and security.
+This version includes technologies that are used only in certain
+cases and most users do not need them.
+In our case, the choice is obvious — it’s Windows 10 Education.
+In fact, it has the maximum capabilities, the same as
+the version of Windows 10 Enterprise. The main difference is
+licensing. Educational institutions pay for licenses much less
+than commercial organizations. (For educational purposes —
+free of charge)
+More information about the difference between the versions
+is available from https://www.microsoft.com/en-us/
+WindowsForBusiness/Compare.
+Before you begin the process of installing the operating
+system, you must ensure that the computer hardware meets
+the minimum requirements of Windows 10.
+The table lists the minimum requirements for a PC that
+supports Windows 10.
+Hardware requirements may change over time, so to be
+sure before starting the installation, you need to find the relevant
+information currently available on the Microsoft website.
+A PC with Windows 10 support must meet or exceed
+the basic requirements for providing basic functionality of
+the Windows 10 operating system. These requirements are
+based on the assumption that you install only the operating
+system without any additional functions. For example, you
+can limit yourself to minimum requirements if you are installing
+the operating system only to learn the basics of
+the software. Remember, the better the hardware, the better
+the performance.
+The requirements for the graphics card depend on the resolution
+of the monitor that you are going to use. The required
+amount of video memory (it makes sense in those cases when
+a discrete video card is not used and the amount of video
+memory is set in the BIOS settings) is as follows:
+■■ 64MB are required for one monitor with a resolution of
+1310,720 pixels or less, which is equivalent to a resolution
+of 1280×1024.
+■■ 128MB are required for one monitor with a resolution of
+2304,000 pixels or less, which is equivalent to a resolution
+of 1920×1200.
+■■ 256MB are required for a single monitor with a resolution
+of more than 2,304,000 pixels.
+If you are not sure if your computer meets the minimum
+requirements, Microsoft provides some tools that can help
+you determine whether the computer is compatible with
+Windows 10.
+Hardware Compatibility List (HCL)
+In addition to meeting minimum requirements, your
+equipment should be listed in the Hardware Compatibility
+List (HCL) if possible. HCL is an extensive list of computers
+and peripherals tested in the Windows 10 operating system.
+To determine if your computer and peripherals are in HCL
+In our case, the choice is obvious — it’s Windows 10 Education.
+In fact, it has the maximum capabilities, the same as
+the version of Windows 10 Enterprise. The main difference is
+licensing. Educational institutions pay for licenses much less
+than commercial organizations. (For educational purposes —
+free of charge)
+More information about the difference between the versions
+is available from https://www.microsoft.com/en-us/
+WindowsForBusiness/Compare.
+Before you begin the process of installing the operating
+system, you must ensure that the computer hardware meets
+the minimum requirements of Windows 10.
+The table lists the minimum requirements for a PC that
+supports Windows 10.
+Hardware requirements may change over time, so to be
+sure before starting the installation, you need to find the relevant
+information currently available on the Microsoft website.
+A PC with Windows 10 support must meet or exceed
+the basic requirements for providing basic functionality of
+the Windows 10 operating system. These requirements are
+based on the assumption that you install only the operating
+system without any additional functions. For example, you
+can limit yourself to minimum requirements if you are installing
+the operating system only to learn the basics of
+the software. Remember, the better the hardware, the better
+the performance.
+The requirements for the graphics card depend on the resolution
+of the monitor that you are going to use. The required
+amount of video memory (it makes sense in those cases when
+a discrete video card is not used and the amount of video
+memory is set in the BIOS settings) is as follows:
+■■ 64MB are required for one monitor with a resolution of
+1310,720 pixels or less, which is equivalent to a resolution
+of 1280×1024.
+■■ 128MB are required for one monitor with a resolution of
+2304,000 pixels or less, which is equivalent to a resolution
+of 1920×1200.
+■■ 256MB are required for a single monitor with a resolution
+of more than 2,304,000 pixels.
+If you are not sure if your computer meets the minimum
+requirements, Microsoft provides some tools that can help
+you determine whether the computer is compatible with
+Windows 10.
+Hardware Compatibility List (HCL)
+In addition to meeting minimum requirements, your
+equipment should be listed in the Hardware Compatibility
+List (HCL) if possible. HCL is an extensive list of computers
+and peripherals tested in the Windows 10 operating system.
+To determine if your computer and peripherals are in HCL,
+check the most recent list at https://msdn.microsoft.com/enus/
+library/windows/hardware/dn922588(v=vs85).aspx.
+The Windows 10 operating system requires management
+of the equipment to ensure stability, efficiency, and safety.
+Hardware and supported HCL drivers have passed thorough
+tests to ensure their compatibility with Windows 10. Microsoft
+ensures that the devices in the list meet the requirements for
+Windows 10 and do not have any incompatibilities that could
+affect the stability of the system. If you call Microsoft support,
+the first thing a support engineer will ask is your configuration.
+If you have any hardware that is not in the HCL, you will
+not be able to get support from Microsoft.
+Compatibility with BIOS
+Before installing Windows 10, you should make sure that
+your motherboard has the latest BIOS version installed. This
+is especially important if your current BIOS does not support
+Advanced Configuration and Power Interface (ACPI).
+For normal operation of Windows 10, this technology is required.
+Check the BIOS version information on the website
+of the computer’s motherboard manufacturer.
+Requirements to Drivers
+To successfully install Windows 10, you must have the necessary
+device drivers for your computer, such as a hard disk
+driver. In the tools of Windows 10, there is an extensive list
+of drivers, but in spite of this, it is possible that the necessary
+driver will not be on the installation disc. In this case, you will
+have to visit the manufacturer’s website again to find the necessary
+drivers.
+New Installation or Update?
+Once you have determined that your equipment meets
+the minimum requirements, you need to decide if you want
+to perform an update or a clean installation. The update allows
+you to save existing applications, settings, and operating
+system files. The bad news is that you will not be able to
+upgrade if you have Windows Vista, Windows XP, or an earlier
+version of Windows installed on your computer. You will
+need to perform a clean installation. (However, you can use
+a third-party tool, such as the Laplink utility, to transfer files
+and settings from Windows XP to Windows 10 on the same
+computer.)
+You can upgrade to Windows 10 if the following conditions
+are true:
+■■ You are using Windows 7 or Windows 8.
+■■ You want to keep your existing applications and settings.
+■■ You want to keep local users and groups created by you.
+You must perform a clean installation of Windows 10 if
+one of the following conditions is true:
+■■ Operating system is not installed at the moment.
+■■ You have an operating system that does not support an inplace
+upgrade to Windows 10 (for example, DOS, Windows
+9x, Windows NT, Windows Me, Windows 2000
+Professional, Windows Vista, or Windows XP).
+■■ You want to start from scratch, without saving any existing
+settings.
+■■ You want to be able to dual boot between Windows 10
+and the previous operating system.
+Ugrade Considerations
+Almost all applications of Windows 7 and Windows 8
+should work with the operating system Windows 10. However,
+exceptions are possible, namely:
+■■ Applications that use file system filters, such as antivirus
+programs, may be incompatible.
+■■ Custom power management tools may not be supported.
+Before upgrading to Windows 10, be sure to stop the anti-
+virus scanners, network services or other client software.
+These software packages can decide that installing Windows 10
+is a virus and start to prevent it in every possible way. If you
+perform a clean install on the same partition as the existing
+version of Windows, the contents of the Users (or Documents
+Ugrade Considerations
+Almost all applications of Windows 7 and Windows 8
+should work with the operating system Windows 10. However,
+exceptions are possible, namely:
+■■ Applications that use file system filters, such as antivirus
+programs, may be incompatible.
+■■ Custom power management tools may not be supported.
+Before upgrading to Windows 10, be sure to stop the anti-
+virus scanners, network services or other client software.
+These software packages can decide that installing Windows 10
+is a virus and start to prevent it in every possible way. If you
+perform a clean install on the same partition as the existing
+version of Windows, the contents of the Users (or Documents

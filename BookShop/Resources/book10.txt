@@ -1,0 +1,143 @@
+2. Managing Printers
+Printers have been a problem for hardware and software
+developers around the world and will continue to be so. Each
+new update/release/version of the operating system has a new
+software package that facilitates installation and maintenance,
+but printer technologies continue to be updated and improved,
+and hardware manufacturers continue to make changes.
+The driver base for all existing printers will be huge, since
+even for the same printer there are many options. The printers
+themselves, in turn, have a large set of various options that
+can be made available, and all this should be controlled by
+the operating system through the drivers.
+Terminology Features: Printer and Print Device
+In the IT world, we need to distinguish between the functionality
+of hardware and software (both driver software and
+management software).
+A physical device with paper in it is called a print device,
+not a printer. Printer is a software application on the local
+machine that controls the print device. The printer driver is
+a software layer between the operating system and the locally
+installed software (printer).
+In most organizations, not all printers are connected to
+each computer. Usually one device is used by several users.
+This is economically viable, but tends to cause problems. Every
+one – ordinary users and IT professionals – should occasion
+ally print something, and so we send our documents or web
+pages to the printer when we want to print them.
+The print device can be connected to someone's machine
+and shared by others, or it can be a stand-alone device. You
+can have a print server on your network that has one or more
+print devices, and all users will send their documents to this
+server. Printer and the relevant drivers will be installed on each
+user computer so that Windows 10 can send the document
+to the print device through the printer using the appropriate
+instructions.
+Of course, the print device cannot physically print the
+document at the speed at which the printer can send data to
+it. Here comes the software component called the spooler.
+There must be software components that can buffer the print
+job until the print device can complete it. In fact, there may
+be more than one user sending documents to print to the
+same print device at the same time, and the spooler will also
+process them.
+Printer Installation
+You can install the printer on your computer in two different
+ways:
+■■ First, when the print device is physically connected to
+a computer,
+■■ The second is a network installation.
+In any case, there must be software drivers, and they can
+be on CD/DVD, on a network resource downloaded in advance
+from the manufacturer's website, or even be present in the files
+of the Windows distribution. After installation, the printers
+in Windows 10 will be located in the Devices and Printers
+window and allow Device Stage configurations to use the full
+range of functions from this single location.
+To add a printer to your computer locally, you usually
+run the installer on a CD/DVD (following the manufacturer's
+instructions). The installation program from the manufacturer
+in the form of a wizard will ask relevant questions. You
+can configure the printer through Windows 10, as well as by
+adding the Devices and Printers function.
+To add a printer using the Windows 10 features, right-click
+Start, click Control Panel, click Browse Devices and Printers,
+and then click Add a Printer in the window that opens. When
+USB printers are connected, they will be automatically detected
+and their drivers will be installed (or at least automatically
+searched) (see Figure 15).
+Selecting the Add Printer menu item launches the Add
+Wizard, and displays a screen where you can select which
+printer you want to install. If the desired printer is not listed,
+you can select the Required printer is not listed link. If the
+printer was not specified, the following screen allows you to
+choose whether to install the printer using the printer's network
+name, TCP/IP address, wireless discovery, or by adding
+a local or network printer (see Figure 16).After the printer setup wizard finishes or the installer
+installs your printer from the manufacturer, you can open
+the Devices and printers window and look at the device
+that appeared. Through the context menu, you get access to
+the Properties dialog box, as well as to some of the standard
+print functions. Since manufacturers continue to constantly
+add new functionality to Windows 10, you will have access
+to a full set of software components from the Devices and
+Printers window, at least for manufacturers who will support
+the Device Stage specification.
+To configure the printer to connect to a remote print device,
+you must start the Add Printer Wizard and go through
+the process of installing the printer, but point to a shared or
+standalone network printer using one of the suggested options.
+Not all computers in any company network will have
+physically connected print devices. So, it is possible to allow
+sharing of network devices and installation of printers (software)
+on client machines.
+Configuring Printers
+After you have installed printer for the print device that
+is physically connected to a local computer or connected over
+a network, you can view the printer's configuration settings
+and, if necessary, change them in the Properties dialog box
+(see Figure 17).
+The Properties dialog box for printers conforms to the
+standard set by Microsoft, but the content really depends on
+the manufacturer. Some manufacturers will provide more
+information than others. Most printers will provide a basic
+set of tabs (see Figure 18).
+General tab
+The printer name, location, and comments are displayed
+here. Usually a model is shown, as well as features of a particular
+print device and available paper. The printer settings
+page is accessible through the Settings button.
+Sharing tab
+On the Sharing tab, you can share the printer if it was
+not provided during its installation, or stop sharing if it was
+previously provided. You can also add drivers for other operating
+systems so that a locally installed and shared printer
+can provide drivers for other computers trying to connect
+and use them.
+Ports tab
+Available ports and connected print devices can be viewed
+on the Ports tab. You can add a port, delete a port, and configure
+ports through this tab. Typically, operating systems
+simply send data to the print device, but some print devices
+must interact with the operating system. This is called bi-directional
+support (sending codes back from the print device
+to the printer for management).
+There is also a pool of printers. Pooling allows the system
+engineer to configure multiple print devices (using identical
+drivers) to be displayed as a single printer for users. Print
+tasks will be printed on one of the devices in the pool (the
+first print device prints the job). If the print device fails, others
+will continue to work.
+It is important that all printers entering the pool are next
+to each other. If one device fails, the print job will be printed
+on the next available device, and they will be scattered
+throughout the company, then users will have to search for
+their printed documents for a long time .
+The Advanced tab (see Figure 19) provides various configuration
+options for controlling functions of the printer
+and the print device. One of the available settings is the time
+within which the printer is available. You can set certain hours
+or allow the printer to always be available.
+Configuring the installed print driver is also an option,
+since a new driver is added (by running the Add Printer
+Driver Wizard).

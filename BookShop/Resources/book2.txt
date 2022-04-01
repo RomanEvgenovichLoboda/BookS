@@ -1,1 +1,130 @@
-ooo my god
+Windows 10 operating system is, at the time of writing this
+lesson, the latest client operating system by Microsoft. This
+system encapsulated all advantageous solutions of the previous
+OSs (Windows 7 and 8) and besides, it is adapted to work
+with the use of modern cloud technologies.
+Windows 10 is presented in seven different versions:
+¦¦ Windows 10 Home
+¦¦ Windows 10 Professional
+¦¦ Windows 10 Enterprise
+¦¦ Windows 10 Education
+¦¦ Windows 10 Mobility
+¦¦ Windows 10 Mobility Enterprise
+¦¦ Windows 10 Anniversary Edition.
+Microsoft also offers a simplified version of the OS, which
+was developed for the Internet of things — Windows 10 IoT
+Core. It is positioned as an option for an embedded solution.
+In Windows 10, the shortcomings revealed during the use
+of Windows 8 were fixed. It loads faster, turns off faster than
+Windows 8. It also adds the ability to use the Start button and
+the main menu, as it was implemented in Windows 7. File
+operations are also faster than in previous versions of the OS.
+Innovations that appeared in Windows 10
+Cortana is a personal assistant. When asking her a question,
+you will get possible answers to it.
+Secure Boot is the ability to use hardware virtualization
+to prevent the launch of malicious programs on your system
+during its launch.
+Virtual Smart Cards is a new offer from Windows 10 to
+use two-stage authentication without the need for additional
+hardware.
+Miracast. Windows 10 allows you to project a laptop or
+other mobile device’s screen to a projector or TV. Miracast allows
+you to connect to an external device using the adapter
+of your mobile wireless display (WiDi).
+Hyper-V. Windows 10 (except Home version) contains
+Hyper-V built into Windows components.
+Enterprise Data Protection. This technology allows you
+to protect corporate data in those organizations that practice
+the BYOD approach (bring your personal device). EDP helps
+protect corporate data from the possibility of damaging them
+by personal programs on the employee’s personal device.
+Device Guard is a technology that allows only authorized
+applications to run on devices running Windows 10. It also
+prevents malicious software from running.
+Microsoft Passport. Windows 10 allows administrators
+to replace passwords with other types of authentication in
+the operating system. Microsoft Passport allows multifactor
+authentication using a combination of registered device, biometric
+authentication or personal identification number (PIN).
+Microsoft has added the ability to use your Microsoft account
+using your corporate account. Thus, with Windows 10
+Microsoft Passport, you can be registered in your domain, as
+well as in the cloud and on Microsoft Web sites. After the initial
+two-step verification, when you register with Microsoft
+Passport, the Microsoft Passport service is configured on
+the user’s device and the user determines the gesture that can
+be Windows Hello (biometric check) or PIN. The user makes
+a gesture to verify their identity, after which Windows uses
+Microsoft Passport to authenticate the user and provide access
+to protected resources and services. Since no password
+is required, the use of hacking software to crack the password
+in the account becomes impossible.
+The Start menu — Windows 10 returned the Start menu
+that users were familiar with on Windows 7. The Start menu of
+Windows 10 combines the best of Windows 7 and Windows 8.
+Thus, the Start menu provides you with a menu, which we
+knew in Windows 7, as well as «Live» tiles, which users liked
+in Windows 8.
+Microsoft Edge and Internet Explorer 11. In Windows 10,
+there is a new way to search the Internet with Microsoft Edge.
+But Windows 10 also still comes with Internet Explorer 11 in
+case you need to start ActiveX controls or run backward-compatible
+web services or sites.
+Microsoft Edge allows users to use many new Microsoft
+features, including Web Note (the ability to comment, highlight
+and display information directly on web pages), Read
+(allows you to print and save as PDF for easy reading), and
+Cortana (personal assistant).
+Domain registration and group policy. Depending on
+the version of Windows 10 that is being used, administrators
+can connect the computer to the domain as a Windows 10
+client, either to the corporate version of Active Directory, or
+to the cloud version of Azure Active Directory.
+The Windows Store for Business. The Microsoft Store includes
+many applications that allow users to get the best functionality
+and performance from their Windows 10 devices.
+One of the benefits of corporations is that they can create
+their own applications and download them to the Microsoft
+Store for download by users.
+Mobile Device Management. Mobile Device Management
+(MDM) allows administrators to set Windows 10 policies that
+can integrate many enterprise scripts, including the ability to
+control user access to the Windows store and the ability to
+use corporate VPN.
+MDM also allows administrators to manage multiple users
+who have accounts configured in Microsoft Azure Active
+Directory (Azure AD). Windows 10 MDM support is based
+on the 1.2.1 OpenMan Alliance (OMA) Device Management
+(DM) protocol specification.
+Obsolete Windows features
+With the release of its latest operating system, Microsoft
+decided that some of the features are no longer needed. Here
+are some of the functions that are obsolete:
+¦¦ Gadgets for Windows 7 are removed from components
+in Windows 10.
+¦¦ The Solitaire, Minesweeper and Hearts games that were
+installed in Windows 7 will be removed. Microsoft released
+a version of Solitaire and Minesweeper called Microsoft
+Solitaire Collection and Microsoft Minesweeper.
+¦¦ The functionality of Mobile Device Management will not
+be available in Windows 10 Home Edition.
+¦¦ Users with floppy drives will need to download the latest
+driver from Windows Update or from the manufacturer’s
+website.
+¦¦ Users, who have Windows Live Essentials installed on their
+systems, will lose the OneDrive application which will be
+replaced with the OneDrive version for incoming messages.
+¦¦ OneDrive will no longer support placeholders in Windows
+10. Windows 10 users can choose which folders they
+want to synchronize using OneDrive settings.
+¦¦ If you upgrade Windows 10 from previous versions of
+Windows operating systems that support Media Center,
+Windows Media Center will be removed.
+Windows 10 Architecture
+Windows 10 uses a limited number of files used when booting
+the OS, resulting in increased performance. The system
+is represented by 32-bit and 64-bit versions. It makes sense
+to choose a 64-bit version, at least for reasons of the available
+amount of RAM. For a 32-bit system, this is 3.5 Giga Bytes,
+and for a 64-bit system it is 16 Exo Bytes.

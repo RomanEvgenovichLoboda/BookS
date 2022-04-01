@@ -1,0 +1,104 @@
+Upgrade to Windows 10
+After we looked at the clean installation steps, let’s move
+on to the upgrade to Windows 10 from Windows 8.1. Like
+with the clean installation, you can start the installation from
+the installation DVD, from USB or through the network. As
+the source of the installation files, just like with the clean installation,
+we select DVD.
+Updating the Windows 7 or Windows 8.1 system to
+Windows 10 will save you a lot of time and save you a lot of
+problems. As we update the system, all user data and applications
+will remain installed and will most likely work the same
+way. Sometimes, when we update the system, there may be
+problems with the applications. Most often this is caused by
+an incorrect driver or the need to update the software to a version
+adapted to work with Windows 10.
+The three main steps in the Windows 10 upgrade process
+are similar to those used during a clean installation:
+■■ Collecting information
+■■ Installing Windows
+■■ Configuring Windows
+Install Windows 8.1 Professional as another virtual machine.
+The process of creating a new virtual machine is similar
+to the one previously discussed, so we will not dwell on it.
+The image of the DVD disk is downloaded by placing an order
+on it and receiving a serial number
+Transfer and Migration of User Data
+Of all the migration utilities and user data migration to
+Windows 10, only the USMT utility included in Windows
+ADK (which will be reviewed a little later) remains. But to
+fill this gap, Microsoft, together with LapLink, provides you
+with PCmover Express, which allows you to transfer selected
+files, folders, and other items from your old Windows computer
+to a new computer running Windows 10. You can find
+and use this utility following the link http://pcmoverfree.
+azurewebsites.net/.
+Troubleshoot at Installation
+The process of installing Windows 10 is quite simple.
+The chances of installation errors are greatly minimized
+through the use of wizards and a step-by-step process.
+However, the occurrence of errors is possible and you have
+to be prepared.
+Identifying Common Installation Problems
+During the installation, you may encounter some of the following
+errors:
+■■ Media errors. Media errors are caused by defective or
+damaged DVDs. To check the disk, place it on another
+computer and see if it can read it. Also, check your drive
+for scratches or dirt, in this case, you just need to clean it.
+■■ Insufficient disk space. Windows 10 requires at least 16GB
+for 32-bit OS and 20GB for correct operation of 64-bit OS.
+If the installer determines that this space is not enough, it
+will not allow you to continue.
+■■ Insufficient RAM. Make sure that your computer has
+the minimum amount of memory required for Windows 10
+(1GB for 32-bit or 2GB for 64-bit version). Insufficient
+memory may result in installation failure or the appearance
+of blue screen of death after installation.
+■■ Insufficient processing power. Make sure that your computer
+has the minimum computing power required by
+Windows 10 (a processor with a clock speed of 1GHz or
+higher). Insufficient processing power can lead to installation
+failure or the appearance of blue screen of death
+after installation.
+■■ Devices that are not included in the HCL. If your hardware
+is not listed in the HCL, Windows 10 may not recognize
+this component, or the device may not function correctly.
+■■ Devices without driver support. Windows 10 does not
+recognize hardware without driver support.
+■■ A device that is not configured properly. If your hardware
+is Plug and Play (PnP) compatible, Windows 10 should
+automatically configure it. If your hardware is not Plug and
+Play compatible, you need to manually configure the equipment
+according to the manufacturer’s instructions.
+■■ Invalid product key. Without a valid product key, installation
+will not be possible. Make sure you typed the key correctly.
+■■ Inability to access network resources. If you install Windows
+10 with the usual settings, the computer will receive
+network configuration information from the DHCP server.
+If the DHCP server is not present, the client will still
+generate an automatically configured IP address, but will
+not be able to access network resources via TCP/IP if other
+network clients use DHCP addresses.
+■■ Installing unsupported hard disks. If your computer
+has a hard drive that does not have a driver included in
+the Windows 10 installation media driver base, you will
+receive an error message indicating that the hard disk cannot
+be found. You need to make sure that the hard drive is
+properly connected and functioning. You will need to get
+the Windows 10 disk driver from the manufacturer, and then
+specify the location of the driver by selecting the Download
+option at the drive selection and partition stage.
+Troubleshooting Using Log Files
+When you install Windows 10, setup creates several log
+files. You can view these logs to check for any problems during
+the installation process. Two log files are particularly useful
+for troubleshooting:
+■■ The action log includes all the actions that were performed
+during the installation process, and a description of each
+action. These actions are listed in chronological order.
+The action log is stored as \ Windows \ setupact.log.
+■■ The error log contains errors that occurred during the installation.
+For each error, there is a description and an indication
+of the error severity. This error log is saved as \
+Windows \ setuperr.log.

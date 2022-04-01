@@ -1,0 +1,255 @@
+Working with Images
+When it comes to installing Windows 10 in a corporate
+environment, it means installing the OS on hundreds of computers
+on the network. Installing the OS on each computer
+separately is a slow and very time-consuming process.
+Image is a kind of backup copy of the operating system
+that you can use later for several installations of this system.
+The creation of an image is the process of saving the OS
+state with the subsequent possibility of using the created image
+to install the OS on new computers, which ultimately makes it
+possible to automate the installation process. Windows 10 is
+installed on the reference or source computer, the necessary
+OS settings are made and applications are installed, which
+must then be installed on the target computers. Then an image
+of this OS is created, which can be transferred to other computers.
+As a result, when installing the operating system, we
+get the settings and applications that were defined on the reference
+computer.
+Overview of the system preparation tools
+and disk image creation
+The Sysprep (Sysprep.exe) preparation tool is used to
+prepare the computer for creating the disk image, and then
+the disk image can be created using the Image Capture Wizard
+(image management tool included with Windows 10) or using
+the Deployment Image Servicing and Management utility
+(DISM ).
+Sysprep is a free utility that is included in all modern
+Windows operating systems. By default, the Sysprep utility can
+be found in the \Windows\system32\sysprep directory
+is quite often the method used for automatic deployment
+when you have a large number of computers with similar configuration
+requirements or computers that you often need to
+reconfigure (reinstall the OS). For example, some training
+company reinstalls the same software every few weeks for new
+classes. Having ready-made system images is a quick and easy
+way to simplify the deployment process.
+Most organizations use images to create new machines,
+but they also use them to reinstall the OS on end-user computers,
+which for some reason have stopped working.
+Some organizations use third-party software to capture images
+(for example, Ghost or others) instead of using Sysprep.
+exe and the Image Capture Wizard.
+To perform an automatic installation, the system preparation
+tool prepares the reference computer, removing any unique
+computer data, such as the security identifier (SID) that is used
+to uniquely identify each computer on the network; any event
+logs, and any other unique system information. The system
+preparation tool also detects all Plug and Play devices that are
+installed and can be dynamically configured for any computer
+on which different hardware is installed.
+When the client computer starts the installation using a disk
+image, you can configure what is displayed on the Windows
+Welcome screen and the options displayed during the configuration
+process. You can also fully automate when and
+how the Windows Welcome screen will be displayed during
+the installation process using the / oobe outof-the-box option
+by means of the system preparation tool and the answer file
+named Oobe.xml
+Sysprep is a utility that is only used to configure a new
+OS. It makes no sense to use Sysprep to create an image that
+will be used to update the current OS. There are several keys
+that you can use together with the Sysprep command to configure
+the utility for specific tasks. The table shows the basic
+Sysprep switches.
+The SID Problem with the Deployment Software
+The first time the procedure for deploying the OS was to
+create an image for each computer that could only be used
+later for deploying the OS on the same computer.
+Then, several third-party companies developed software
+that allowed the image of the Microsoft operating system to
+be deployed on other machines. One of the advantages of this
+is that all the software installed in the system can also be part
+of this image. It was a great way to copy all the software from
+one computer to another.
+But ther was one serious problem — the security identifier
+(SID). All computers receive a unique SID that represents
+them on the domain network. The problem is that when copying
+an image to another computer, the SID was also copied.
+To solve this problem, Microsoft released Sysprep. It allows
+you to delete the SID number so that when you later deploy
+the system from this image, it is newly generated and has
+a different value. Many software products of other companies
+for working with images now also delete the SID number, but
+Sysprep is one of the first utilities that helped solve this problem.
+When you decide to use Sysprep to configure your images,
+you must follow several rules for Sysprep to function correctly:
+You can use Sysprep to restart the Windows activation timer.
+The Windows activation timer runs as soon as Windows
+starts the first time. You can only restart the Windows activation
+timer three times using Sysprep.
+The computer, on which you run Sysprep, must be a member
+of the workgroup. It cannot be part of a domain. If the computer
+is a member of a domain, when you start Sysprep, the computer
+is automatically deleted from the domain.
+When installing from an image, the system prompts you
+to enter the product key. During the installation, you can use
+an answer file, which in turn, will have all the information you
+need to install, and you do not need to enter any information.
+To capture and deploy an image created with Sysprep, you
+need a third-party utility or image capture wizard.
+If you use Sysprep to capture an NTFS partition, any files or
+folders that are encrypted will become corrupted and unreadable.
+One of the advantages of using Sysprep in Windows 10 is
+that you can use Sysprep to prepare a new computer for duplication.
+You can use Sysprep to create an image of Windows 10.
+To do this, you must perform the following steps:
+1. Install Windows 10 .
+2. Install all components in the OS.
+3. Run Sysprep /generalize to prepare the system for capture.
+4. The system will reboot. After the computer restarts, use
+the image capture tool.
+Benefits of the System Preparation Tool
+The following are the benefits of using the system preparation
+tool as a method to automate the installation of Windows 10:
+For a large number of computers with the same hardware,
+this greatly reduces deployment time by placing the operating
+system, applications and desktop settings from the reference
+computer into an image that can then be deployed to multiple
+computers.
+The use of disk images facilitates the standardization of
+desktops, administrative policies, and restrictions throughout
+the organization.
+Reference images can be copied over the network or through
+DVD-ROMs, distributing them to client computers.
+Disadvantages of the System Preparation Tool
+There are some disadvantages of using the system preparation
+tool as a method of automating the installation of
+Windows 10:
+■■ You must use the Image Capture Wizard, a third-party
+software, or hardware disk duplication devices.
+■■ You must use the version of the system preparation tool
+that comes with Windows 10. An older version of Sysprep
+cannot be used to prepare for creating a Windows 10 image.
+■■ The system preparation tool does not detect any hardware
+that is not Plug and Play compatible.
+Overview of Windows Assessment
+and Deployment Kit
+Another way to install Windows 10 is to use the Windows
+Assessment and Deployment Kit (ADK). Windows ADK is
+a set of utilities and documentation that allow an administrator
+to configure and deploy Windows operating systems.
+The administrator can use Windows ADK to perform the following
+actions:
+■■ Windows Image and Configuration Designer (ICD)
+■■ Windows Assessment kit
+■■ Windows Performance kit.
+Windows ADK can be installed and configured on the following
+operating systems:
+■■ Windows 10
+■■ Windows 7/8 with the upgrade package 1
+■■ Windows Server 2012 R2
+■■ Windows Server 2012
+■■ Windows Server 2008
+■■ Windows Server 2008 R2
+■■ Windows Server 2003 with the upgrade package 2.
+Windows ADK is a good solution for organizations that
+need to configure the Windows deployment environment.
+Windows ADK allows the administrator to have the flexibility
+necessary for a mass deployment of Windows operating
+systems. Because the needs of each organization are different,
+Windows ADK allows you to use all or only some of the available
+deployment tools. It allows you to manage deployment
+with some additional tools.
+Windows Imaging and Configuration Designer (ICD).
+The tools included in this part of the Windows ADK will allow
+the administrator to easily deploy and configure operating
+systems and Windows images.
+Windows Application Compatibility Toolkit. When installing
+new Windows operating systems, applications running
+on a previous version of Windows may not work correctly.
+The application compatibility tool allows the administrator
+to help solve these problems before they occur.
+Windows Performance Toolkit is a utility that will find
+computers on the network and then conduct a complete inventory
+of them. Then, this information can be used to determine
+which computers can have installed Windows 10.
+Windows Imaging and Configuration Designer.
+The Windows imaging and configuration designer (ICD) allows
+the administrator to work with images. ICD allows the IT
+department to do the following:
+■■ View and configure all settings and policies for the Windows
+10 image or security package
+■■ Create answer files for Windows preparation
+■■ Use the answer file to add third-party drivers, applications,
+or other assets
+■■ Create options and specify the parameters that apply to
+each option
+■■ Create and run a Windows image
+■■ Create a security package.
+Windows ICD provides the IT department with many
+options for deploying and configuring Windows 10 clients.
+Here are some of the functions that can be performed using
+Windows ICD tools:
+■■ Configuring and editing an image using the service utility
+and managing the deployment process from images.
+■■ Creating Windows Preinstallation Environment (Windows
+PE) images
+■■ Transferring user data and profiles using the User State
+Migration Tool (USMT). This tool must first be downloaded
+from the official Microsoft website.
+■■ Windows Imaging and Configuration Designer (Windows
+ICD).
+Using Windows ICD to Create a Disk Image
+You can download and install it from the official Microsoft
+website
+allation
+wizard adksetup.exe. Next, you will be prompted
+to immediately install ADK on this computer or download
+the installation package for the possibility of subsequent installation
+on multiple computers. Leave the first option and
+go to the second window of the installation wizard 
+We will not consider the work of absolutely all the components
+that make up the ADK now, but we also cannot disable the installation
+of some of them because of the constraints imposed
+by the dependencies. First of all, we are interested in the ICD
+component. When you select it, the right part of the window
+lists the components that also require installation
+We press the Install button and wait about half an hour (it
+will depend greatly on the speed of the network connection)
+until the installation is performed.
+After running the System Preparation Tool (Sysprep) on
+the source computer, you can create the image, and then you
+can install the OS from the created image to the target computers.
+To create an image, you can use the Image Capture
+Wizard. This is a utility that you can use to create and manage
+Windows image files (WIM).
+To start the Image Capture Wizard to create a Windows 10
+disk image, follow these steps:
+1. On the Windows ICD start page, select Windows Image
+Customization
+2. In the Enter Project Details window, specify the name and
+location for your project. If you want, you can also enter
+a short description of your project
+3. Press Next.
+4. If you selected Windows Image Customization on the start
+page, skip this step.
+5. In the Select Project Workflow window, select Imaging from
+the list of available workflows of the project and press Next.
+6. In the Select Imaging Source Format window, select The Windows
+image is based on a Windows image (WIM) file, and
+then press Next
+7. In the Select Image window, press Browse to run the File
+Explorer. Find and specify the path to the Install.wim file
+(fig. 57).
+8. After you have selected the Install.wim file, all the Windows
+images in the WIM file format will be displayed in
+the Available Images panel. By default, the first Windows
+image in the list will be offered, and information about this
+image will be displayed in the Image Information panel.
+9. Select the Windows image you want to use and press Next.
+10. Press Finish.
+There is also a console version of Windows ICD that you
+can use. The command looks like this:
+More detailed information about the keys and parameters of
+this command can be found on Microsoft technical resources.

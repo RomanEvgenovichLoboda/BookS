@@ -1,0 +1,94 @@
+Windows 10 Installation
+The first step of installing Windows 10 is to select the type of
+media from which the installation will be performed. Windows 10
+offers several ways to perform the installation.
+You can install Windows 10 either from a bootable DVD,
+or over a network, using files that have been previously copied
+to a shared resource or a USB device. You can also install
+Windows 10 using a virtual hard disk (vhd). You can also run
+the setup.exe file from the Windows 10 operating system to
+update the operating system. To start installation, just restart
+the computer and boot from the DVD-ROM. The installation
+process will start automatically.
+If you decide to install Windows 10 over a network, you
+need to preconfigure the deployment server. A deployment
+server is a server with specially prepared Windows 10 installation
+files copied to a shared folder.
+Running a Clean Installation of Windows 10
+Whenever you install Windows 10, there are three steps.
+1. Collection of information. At the data collection stage,
+Windows 10 collects the information necessary to complete
+the installation. This is where Windows 10 is requesting
+your local time, location, keyboard layout, license
+agreement, installation type, and partition information for
+the installation disc.
+2. Windows installation. During this installation stage,
+the Windows 10 files are copied to the hard drive. This
+stage takes the maximum time.
+3. Configuring Windows. At this point, you configure the user
+name, computer name, and password; enter the product key;
+configure security settings. Once this stage is completed,
+the installation will be considered complete.
+Let’s consider the process of clean installation from a DVD
+drive step by step.
+Last time (the material of the first lesson) we created and
+configured a virtual machine to run on it Windows 10 Education
+as a guest OS. Let’s open properties of the virtual machine
+and make sure that the image of the installation DVD
+is installed in the virtual DVD drive
+After this, close the settings window and press Start (fig. 4).
+The virtual machine starts and, according to the settings,
+the first device being polled is the DVD drive in which the installation
+disk is located. As a result, after a few seconds we
+see the first window of the installation wizard, in which we
+are offered to choose the installation language, time format,
+and input method
+The next step is to tick the I accept the license terms check box,
+otherwise the installation will not be possible later (fig. 7). L
+Select the Custom installation type. We have nothing to
+update. In a virtual machine, we have an empty hard disk,
+which does not yet contain any information. You can, if you
+want, use the link at the bottom of the Help me decide window
+Also at this stage, you can create other partitions, but given
+the limited functionality, it is better to perform these operations
+after installing the OS. In some cases, if RAID controllers
+are used, the drivers must be installed in order for
+the system to determine the disks connected to them. To do
+this, there is the Load button. If a message appears that there
+are no drivers for the optical drive — the reason is in the disk
+or disk image!
+Press the Next button and wait a few minutes until the necessary
+files are copied to the hard disk 
+The penultimate stage of configuration is creating an account.
+Here are two options: either to use the account of one
+of the Microsoft services or create a local account. Let’s choose
+the second option. To do this, we will point the link in the lower
+left corner — Join a domain.
+Microsoft offers two basic types of network: workgroup-based
+or domain-based. Workgroups (also called peer-to-peer networks)
+are where you simply connect your computers together.
+An excellent example of a peer-to-peer network is the home
+network. Most home users connect their computers together
+without using the primary server.
+Corporations usually do it differently. Domains are networks
+that are controlled by servers called domain controllers.
+Domain controllers are Windows servers with a copy of
+the Active Directory (AD) database. Recently, Microsoft expanded
+the concept of domain networks, allowing companies
+to create a cloud version of the Active Directory domain
+(Azure AD). This means that companies no longer need to
+maintain and manage their own domain controllers.
+Since we do not have a cloud version of Azure AD, we chose
+the option Join a domain so that we can complete the installation
+of Windows 10
+The installation is complete. Windows 10 greets you and
+immediately suggests configuring the visibility of your computer
+on the network, as well as download and install the latest
+updates (fig. 21).
+You can refuse by clicking the Not now link in the lower
+left corner, but it is recommended that you perform this
+procedure, because this is, on the one hand, the correction
+of errors detected since the publication of this DVD image
+(in the screenshot, where we accept the license agreement,
+there is is the date of the last update — December 2016 L),
+on the other hand, security improvement.

@@ -1,32 +1,136 @@
-Roma The Best
-после выделенного, будет форматирован с учетом того
-же параметра, пока этот параметр не будет изменен,
-или не будет выделена друга€ часть документа элемента
-управлени€. —войство SelectionFont
-позвол€ет выде-
-л€ть текст полужирным шрифтом или курсивом. роме
-того, с помощью этого свойства можно измен€ть раз-
-мер и шрифт текста. —войство SelectionColor
-позвол€ет
-измен€ть цвет текста. ƒл€ создани€ маркированных
-списков следует использовать свойство SelectionBullet.
-Ќастройка форматировани€ абзацев осуществл€етс€
-также с помощью свойств SelectionIndent, SelectionRightIndent
-и SelectionHangingIndent.
-Ёлемент управлени€ RichTextBox, как и TextBox, по-
-звол€ет отображать полосы прокрутки, однако в отличие
-от TextBox, он по умолчанию отображает и горизонталь-
-ную, и вертикальную полосы прокрутки в зависимости от
-необходимости, а также поддерживает дополнительные
-параметры их настройки.  ак и дл€ элемента управлени€
-TextBox, отображаемый текст задаетс€ свойством Text.
-в элементе управлени€ RichTextBox содержитс€ множе-
-ство свойств дл€ форматировани€ текста. ƒл€ управлени€
-файлами используютс€ методы LoadFile и SaveFile:
-LoadFile(String) /* «агружает файл в формате RTF
-или стандартный текстовый файл в кодировке ASCII
-в элемент управлени€ RichTextBox.*/
-SaveFile(String) /* —охран€ет содержимое элемента
-управлени€ RichTextBox в RTF-файл.*/
-ћетоды LoadFile и SaveFile отображают и сохран€ют
-множество форматов файлов, в том числе обычный текст,
+Methods and functions provided by virtualization may
+be quite helpful in the following cases:
+¶ Start user applications created for other operating systems
+without rebooting the computer.
+¶ Start networking services created for other operating
+systems without rebooting the computer.
+¶ Test software created by a programmer for other operating
+systems.
+¶ Study networking using a single computer.
+¶ Study various operating systems. Advantages of using
+virtual machines when studying operating systems.
+¶ Possibility to install operating system without changing the
+structure of physical hard drive partitions Ц on a virtual
+drive being a regular file in the computer file system.
+¶ Possibility to safely manipulate partitions of virtual drive,
+possibility to connect multiple virtual hard drives to a
+virtual machine and safely study management of drive
+resources.
+¶ Possibility to experiment with an operating system installed
+virtually without being afraid to damage the real operating
+system and data.
+¶ Possibility to back up the file of the virtual hard drive
+and to quickly restore the damaged virtual system using
+this backup.
+¶ Possibility to study networking on a single computer.
+General ideas about hardware part of a virtual computer,
+support of one type of equipment of each type (video
+card, chipset, etc.) regardless of the equipment installed
+on the real computer. Wide possibilities on the usage of
+virtual storages (floppy disks, CD/DVD ROM) on the
+virtual computer.
+Today, there are more than a dozen of various systems to
+solve virtualization problems, beginning with the simplest
+and ending with the most complicated one: from Virtual PC
+to Microsoft Hyper-V, from VM Player to VMWare ESXi
+Server, and so on.
+As a rule, simple solutions are highly limited in functionality, and serious products are hard to configure and expensive.
+In our case, it is desirable to have simple to study and free
+software in order to get acquainted with virtualization. The
+most suitable solution is VirtualBox.
+VirtualBox was created by the Innotek company in 2007.
+Sun Microsystems bought it in 2008, but it was then taken
+over by Oracle in 2010, and the latter holds its position up to
+the present time.
+VirtualBox is a cross-platform virtualization solution.
+What does it mean?
+First, it is installed on your existing Intel- or AMD-based
+computers, regardless of the operating system they are working
+under: Windows, Mac, Linux, etc. 
+Second, it widens the possibilities of your computer in
+such a way that it can simultaneously run multiple operating
+systems (inside of multiple virtual machines). For example,
+you can run Windows and Linux on your Mac, run Windows
+Server 2008 on your Linux server, run Linux on your PC
+under Windows, etc.
+On top of the existing applications, you can install and
+run as many virtual machines as RAM and disk space allow.
+VirtualBox is deceptively simple, but powerful too. It can
+work everywhere, beginning with small embedded systems
+or personal computers and ending with data centers and even
+cloud environments.
+In order to better understand virtualization and its operation principles, letТs talk about main terms used in this
+technology.
+¶ Host OS is an operating system of a physical computer,
+where VirtualBox is installed. There are VirtualBox versions
+for Windows, Mac OS X, Linux, and Solaris. There may
+be platform specific differences for various host OSs.
+¶ Guest OS is an operating system that works inside a virtual
+machine. In theory, VirtualBox can run any x86 operating
+system (DOS, Windows, OS / 2, FreeBSD, OpenBSD), but
+in order to reach almost own performance of the guest
+code, lots of optimizations had to be undertaken, which
+are specific for certain operating systems.
+¶ Virtual machine is a special environment, which is created
+by VirtualBox for your guest OS during its operation.
+In other words, you run the guest OS inside a virtual
+machine. Usually, VM is displayed as a window on the
+desktop of your computer, but depending on the Virtual
+Box interface used by you, it can be displayed in the
+full-screen mode or remotely on another computer. In
+a more abstract form, VirtualBox views VM as a set of
+parameters that define its behavior. They must include:
+what VirtualBox virtual disks must be virtualized, through
+what container files, what CDs are in the set. Besides,
+they must contain information (regardless of whether
+they are run simultaneously, save, save snapshots, etc.).
+These settings are displayed in the VirtualBox Manager.
+Put it differently, virtual machine is also something you
+can see in a dialog box of settings.
+¶ Guest Additions are special software packages supplied
+with VirtualBox, but they are intended for installation
+inside a virtual machine in order to increase performance
+of the guest OS and add further functions.
+In order to install VirtualBox, first download installation
+packages from the official website at: http://www.virtualbox.org.
+Base package consists of all open-source components and
+is licensed in accordance with GNU General Public License
+V2.2. You can load additional extension packages that extend
+functionality of the base VirtualBox package. To date Oracle
+provides one extension package, which includes some additional functions.
+After the VirtualBox installation, which is performed in
+the usual way, you can start to create your virtual machine.
+After the program is launched
+On the one hand, this value must be not less than the
+one specified in the hardware requirements to the operating
+system under installation. On the other hand, itТs meaningless
+to allocate too much memory.
+Green scale shows how much memory you can allocate.
+Red scale warns that you encroach on the zone allocated to
+the main OS. The program will prompt you the recommended
+memory size and you should leave it like this unless you have
+some serious reasons to change it.
+The third window of the Wizard lets you begin the process
+of creating virtual hard disk. By default it proposes you to
+create a new virtual hard disk. We will agree on this since
+creation of a diskless workstation is beyond our current scope,
+and given that this is our first time working with VirtualBox,
+we donТt have an existing virtual hard disk either.
+Here, it is very important to specify where exactly the main
+machine will create the disk image file. This is a user profile
+under which VirtualBox is run. But taking into account the
+future size (or the current one in case of fixed type), it is highly
+not recommended to store it on the system disk.
+And if multiple virtual machines must be created, C: drive
+will run out of space very quickly. ThatТs why it is recommended
+to create a separate directory on some of the drives other than
+the system one that has the required free space.
+You can specify new drive by clicking the folder icon to
+the right hand of the window next to the file name, which will
+be assigned to the image file of the virtual disk.
+This is where the WizardТs work is done. Just a few finishing
+touches, and the virtual machine is ready for use. The buttons
+Settings and Start in the main menu are active now.
+LetТs perform additional settings.
+General
+The first tab is Basic. It allows us to change parameters selected in the very beginning of the creation of virtual machine. 

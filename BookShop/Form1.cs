@@ -20,6 +20,7 @@ namespace Library
         public Polka()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             radioButton1.Checked = true;
             pictureBox11.Visible = false;
             picts = new List<Image>() { global::BookShop.Properties.Resources.к1,
@@ -37,7 +38,7 @@ namespace Library
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox11.Image = picts[rand.Next(0,5)];
+            pictureBox11.Image = picts[new Random().Next(5)];
             using(OpenFileDialog ofd = new OpenFileDialog()) 
             {
                 ofd.Filter = "TEXT|*.txt|ALL|*.*";
@@ -68,7 +69,7 @@ namespace Library
         {
             if (ReadOrDel())
             {
-                book = new Book();
+                book = new Book(@"Resources\book3.txt");
                 book.ShowDialog();
             }
             else { pictureBox3.Visible = false; }
@@ -77,7 +78,7 @@ namespace Library
         {
             if (ReadOrDel())
             {
-                book = new Book();
+                book = new Book(@"Resources\book4.txt");
                 book.ShowDialog();
             }
             else { pictureBox4.Visible = false; }
@@ -86,7 +87,7 @@ namespace Library
         {
             if (ReadOrDel())
             {
-                book = new Book();
+                book = new Book(@"Resources\book5.txt");
                 book.ShowDialog();
             }
             else { pictureBox5.Visible = false; }
@@ -96,7 +97,7 @@ namespace Library
         {
             if (ReadOrDel())
             {
-                book = new Book();
+                book = new Book(@"Resources\book6.txt");
                 book.ShowDialog();
             }
             else { pictureBox6.Visible = false; }
@@ -106,7 +107,7 @@ namespace Library
         {
             if (ReadOrDel())
             {
-                book = new Book();
+                book = new Book(@"Resources\book7.txt");
                 book.ShowDialog();
             }
             else { pictureBox7.Visible = false; }
@@ -115,7 +116,7 @@ namespace Library
         {
             if (ReadOrDel())
             {
-                book = new Book();
+                book = new Book(@"Resources\book8.txt");
                 book.ShowDialog();
             }
             else { pictureBox8.Visible = false; }
@@ -124,7 +125,7 @@ namespace Library
         {
             if (ReadOrDel())
             {
-                book = new Book();
+                book = new Book(@"Resources\book9.txt");
                 book.ShowDialog();
             }
             else { pictureBox9.Visible = false; }
@@ -134,7 +135,7 @@ namespace Library
         {
             if (ReadOrDel())
             {
-                book = new Book();
+                book = new Book(@"Resources\book10.txt");
                 book.ShowDialog();
             }
             else { pictureBox10.Visible = false; }
